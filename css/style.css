@@ -1740,15 +1740,15 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .hero-layout .hero-btns { justify-content: flex-start; }
 .hero-layout .hero-stats { justify-content: flex-start; }
 .hero-imgs {
-  flex: 0 0 360px;
+  flex: 0 0 440px;
   position: relative;
-  height: 450px;
+  height: 540px;
 }
 .hero-img-stack { position: relative; width: 100%; height: 100%; }
 .hero-img {
   position: absolute;
-  width: 265px;
-  height: 305px;
+  width: 320px;
+  height: 375px;
   object-fit: cover;
   border-radius: 24px;
   border: 5px solid #fff;
@@ -1793,8 +1793,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .hero-layout .hero-content { text-align: center; }
   .hero-layout .hero-btns { justify-content: center; }
   .hero-layout .hero-stats { justify-content: center; }
-  .hero-imgs { flex: none; height: 220px; width: 100%; max-width: 340px; }
-  .hero-img { width: 168px; height: 200px; border-width: 4px; }
+  .hero-imgs { flex: none; height: 260px; width: 100%; max-width: 380px; }
+  .hero-img { width: 196px; height: 230px; border-width: 4px; }
   .hero-img-back { right: 0; top: 8px; }
   .hero-img-front { left: 0; bottom: 0; }
   .hero-img-badge { font-size: 0.76rem; padding: 7px 14px; top: -14px; }
@@ -1942,3 +1942,176 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 /* Prevent blue tap highlight flash on mobile */
 .catalog-image,
 .catalog-image-nav { -webkit-tap-highlight-color: transparent; }
+
+/* ─── CITY CONTACT PANELS (kontakt.html redesign) ─── */
+.city-contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr;
+  gap: 0 28px;
+  align-items: stretch;
+  margin-bottom: 40px;
+}
+.city-divider {
+  background: rgba(255,255,255,0.15);
+  border-radius: 2px;
+  align-self: stretch;
+}
+.city-contact-panel {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.city-panel-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.city-panel-header h2 {
+  font-size: 1.55rem;
+  color: #fff;
+  margin: 0;
+}
+.city-panel-header p {
+  color: rgba(255,255,255,0.55);
+  font-size: 0.9rem;
+  margin: 0;
+}
+.city-panel-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.city-panel-zagreb .city-panel-icon { background: rgba(124,58,237,0.25); }
+.city-panel-rijeka .city-panel-icon { background: rgba(249,115,22,0.2); }
+.map-embed-inline {
+  width: 100%;
+  height: 220px;
+  border-radius: var(--radius);
+  border: none;
+  display: block;
+}
+.contact-hash-map {
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.contact-maps-section { margin: 8px 0; }
+.contact-maps-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.contact-map-col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.contact-map-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.85);
+}
+.contact-map-title svg { flex-shrink: 0; opacity: 0.7; }
+
+/* ─── HOW TO BOOK SECTION (kontakt.html) ─── */
+.contact-how-section {
+  padding: 72px 24px;
+  background: var(--bg);
+}
+.contact-how-section .section-inner { max-width: 960px; margin: 0 auto; }
+.contact-how-section .section-title { color: var(--text); }
+.contact-how-section .section-sub   { color: var(--muted); }
+.contact-how-cta {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+/* ─── TERMS LOCATION PANELS (uvjeti.html) ─── */
+.terms-locations-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin-top: 24px;
+}
+.terms-location-full {
+  background: var(--bg);
+  border: 1.5px solid #DDD6FE;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.terms-location-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 22px 24px 18px;
+  border-bottom: 1.5px solid #DDD6FE;
+}
+.terms-location-header h3 {
+  font-size: 1.3rem;
+  color: var(--text);
+  margin: 0;
+}
+.terms-location-header p {
+  color: var(--muted);
+  font-size: 0.88rem;
+  margin: 0;
+}
+.terms-location-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.terms-location-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 18px 24px;
+}
+.terms-location-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.92rem;
+  color: var(--text);
+}
+.terms-location-row svg { width: 16px; height: 16px; flex-shrink: 0; color: var(--purple); opacity: 0.8; }
+.terms-location-row a { color: var(--text); text-decoration: none; }
+.terms-location-row a:hover { color: var(--purple); }
+.terms-location-map {
+  width: 100%;
+  height: 220px;
+  border: none;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .city-contact-grid  { grid-template-columns: 1fr; gap: 20px; }
+  .city-divider       { display: none; }
+  .contact-maps-grid  { grid-template-columns: 1fr; gap: 20px; }
+  .map-embed-inline   { height: 180px; }
+  .terms-locations-grid { grid-template-columns: 1fr; gap: 20px; }
+  .terms-location-map { height: 180px; }
+}
