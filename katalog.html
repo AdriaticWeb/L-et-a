@@ -4,7 +4,8 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Katalog dvoraca — L-et-A dvorci na napuhavanje</title>
-<meta name="description" content="Pregledaj svih 60+ dvoraca na napuhavanje — Zagreb i Rijeka. Filteri po uzrastu i novostima." />
+<meta name="description" content="Katalog dvoraca na napuhavanje — više od 30 modela za Zagreb i Rijeku. Filtrirajte po uzrastu i pronađite savršeni dvorac za rođendan vašeg djeteta." />
+<meta name="keywords" content="dvorci na napuhavanje katalog, napuhanci Zagreb, napuhanci Rijeka, najam dvoraca, dvorac za rođendan, zabava za djecu" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;500;600;700;800&display=swap&subset=latin-ext" rel="stylesheet">
@@ -12,7 +13,6 @@
 </head>
 <body>
 
-<!-- NAVBAR -->
 <nav class="navbar" id="navbar" aria-label="Glavna navigacija">
   <a href="index.html" class="nav-logo">L<span>-et-</span>A</a>
   <ul class="nav-links" id="navLinks">
@@ -27,7 +27,6 @@
   </button>
 </nav>
 
-<!-- PAGE HEADER -->
 <header class="page-header">
   <div class="page-header-inner">
     <a href="index.html" class="breadcrumb">
@@ -39,13 +38,11 @@
   </div>
 </header>
 
-<!-- CATALOG -->
 <section class="catalog" id="katalog">
   <div class="blob blob-1"></div>
   <div class="blob blob-2"></div>
   <div class="section-inner">
 
-    <!-- Filter chips -->
     <div class="catalog-filters" id="filterChips" role="group" aria-label="Filtriraj dvorce">
       <button class="filter-chip active" data-filter="all">Svi uzrasti</button>
       <button class="filter-chip" data-filter="do8">do 8 god.</button>
@@ -53,10 +50,8 @@
       <button class="filter-chip" data-filter="malisani">Mališani (2–3 god.)</button>
     </div>
 
-    <!-- Count -->
     <p class="catalog-count-bar" id="catalogCount"></p>
 
-    <!-- Zagreb section -->
     <div class="city-section" data-city="zagreb" id="sectionZagreb">
       <div class="city-section-header">
         <h2 class="city-section-title">Zagreb</h2>
@@ -65,7 +60,6 @@
       <div class="catalog-grid" id="gridZagreb"></div>
     </div>
 
-    <!-- Rijeka section -->
     <div class="city-section" data-city="rijeka" id="sectionRijeka">
       <div class="city-section-header">
         <h2 class="city-section-title">Rijeka</h2>
@@ -74,13 +68,11 @@
       <div class="catalog-grid" id="gridRijeka"></div>
     </div>
 
-    <!-- Empty state -->
     <div class="catalog-empty" id="catalogEmpty" style="display:none">
       <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="margin:0 auto 12px;display:block;color:#A78BFA"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
       <p>Nema dvoraca za odabrani filter.</p>
     </div>
 
-    <!-- CTA -->
     <div class="catalog-cta">
       <p class="catalog-cta-note">Nisi pronašao što tražiš? <strong>Javi nam se</strong> — možda ti mi možemo pomoći!</p>
       <a href="kontakt.html" class="btn-primary">
@@ -92,7 +84,6 @@
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer class="footer" id="footer">
   <div class="footer-inner">
     <div>
@@ -134,7 +125,6 @@
   </div>
 </footer>
 
-<!-- LIGHTBOX -->
 <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Galerija slika">
   <button class="lb-close" id="lbClose" aria-label="Zatvori galeriju">&#x2715;</button>
   <button class="lb-prev"  id="lbPrev"  aria-label="Prethodna slika">&#8249;</button>
@@ -149,7 +139,6 @@
   </div>
 </div>
 
-<!-- DATA + RENDER (must come after script.js so window.lbOpen is available) -->
 <script src="js/script.js"></script>
 <script>
 document.getElementById('footerYear').textContent = new Date().getFullYear();
